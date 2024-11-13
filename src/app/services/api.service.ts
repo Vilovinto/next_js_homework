@@ -1,6 +1,7 @@
+import {IUser} from "@/app/models/IUser";
 
 
-const getAllUsers = async ():Promise<any[]> =>{
+const getAllUsers = async ():Promise<IUser[]> =>{
     const response = await fetch('https://jsonplaceholder.typicode.com/users')
         .then(value => value.json())
 
