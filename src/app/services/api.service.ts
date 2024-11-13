@@ -8,13 +8,13 @@ const getAllUsers = async ():Promise<IUser[]> =>{
     return response
 }
 
-const getALlPosts = async ():Promise<any[]> =>{
+const getALlPosts = async () =>{
     const response = await fetch('https://jsonplaceholder.typicode.com/posts')
         .then(value => value.json())
 
     return response
 }
-const getALlComments = async ():Promise<any[]> =>{
+const getALlComments = async () =>{
     const response = await fetch('https://jsonplaceholder.typicode.com/comments')
         .then(value => value.json())
 
