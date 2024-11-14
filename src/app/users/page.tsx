@@ -3,7 +3,7 @@ import Link from "next/link";
 import {getAllUsers} from "@/app/services/api.service";
 import {IUser} from "@/app/models/IUser";
 
-const UsersComponent = async () => {
+const Page = async () => {
     const users: IUser[] = await getAllUsers();
     return (
         <div>
@@ -14,4 +14,4 @@ const UsersComponent = async () => {
     );
 };
 
-export default UsersComponent;
+export default Page;
