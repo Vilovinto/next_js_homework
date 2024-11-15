@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import Menu from "@/Menu";
+import Menu from "@/app/Menu";
 
 
 export const metadata: Metadata = {
